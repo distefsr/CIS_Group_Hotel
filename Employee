@@ -17,7 +17,10 @@ public class Employee {
     
     public boolean checkCredentials(String username, String Password){
         
-        return true; //NEED TO FIX!!!
+//        return true; //NEED TO FIX!!!
+        return this.username.equals(username)
+               && (this.password.equals(password));
+       //(if the username &&pass entered equals this Object's username&&pass, return true
     }
     
     public String getEmployeeName(){
